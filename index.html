@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#25645d"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Kristi · Země">
+<meta name="description" content="Hra pro Kristi: poznávej vlajky a procvičuj anglické země a národnosti.">
+<title>Kristi · Cesta kolem světa</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon.png"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css"><script defer src="app.js"></script>
+</head>
+<body><main>
+<header><a href="./" aria-label="Kristi – úvod" class="brand"><span class="brand-icon" aria-hidden="true">✦</span> KRISTI <span class="brand-sub">/ ENGLISH CLUB</span></a><span class="badge">12 zemí · jeden svět</span></header>
+<section id="home">
+<div class="hero-art" aria-hidden="true"><span>🇦🇺</span><span class="globe">🌍</span><span>🇯🇵</span></div>
+<p class="eyebrow">MALÝ VÝLET, VELKÉ OBJEVY</p><h1>Ahoj Kristi,<br>poznáš celý svět?</h1><p class="intro">Vlajky, země a národnosti.<br>Trocha angličtiny, spousta objevování.</p>
+<div class="modes"><button class="mode" data-mode="flags"><span class="mode-symbol" aria-hidden="true">⚑</span><span><strong>Poznej vlajku</strong><small>Vlajka a čtyři anglické názvy zemí</small></span><span class="pill">12 otázek</span></button><button class="mode" data-mode="nationalities"><span class="mode-symbol coral" aria-hidden="true">Aa</span><span><strong>Země a národnosti</strong><small>Ze země na národnost i naopak</small></span><span class="pill">24 otázek</span></button></div>
+<p class="tip">Za správnou odpověď získáš bod. Chyby si na konci zkusíš znovu.</p>
+<details><summary>Jak přidat hru na plochu iPhonu</summary><p>Otevři hru v Safari. Klepni na Sdílet, vyber „Přidat na plochu“ a potvrď „Přidat“. Po prvním načtení funguje hra i bez internetu.</p></details>
+</section>
+<section id="play" hidden><div class="game-top"><button id="home-button" class="text-button">Zpět na výběr</button><span id="mode-label" class="eyebrow"></span></div><div class="stats"><span id="position"></span><strong id="score"></strong></div><progress id="progress" value="0" max="12" aria-label="Průběh hry"></progress><div class="question-card"><p id="instruction" class="eyebrow"></p><div id="prompt"></div><h1 id="question" tabindex="-1"></h1><div id="choices" class="choices"></div><div id="feedback" role="status" aria-live="polite"></div><button id="next" class="primary" hidden>Další otázka</button></div></section>
+<section id="result" hidden class="result"><div class="trophy" aria-hidden="true">✦</div><p class="eyebrow" id="result-label"></p><h1 id="result-title" tabindex="-1"></h1><p id="result-score"></p><p id="result-message"></p><div id="mistake-list"></div><button id="retry" class="primary" hidden>Procvičit chyby</button><button id="again" class="secondary">Hrát znovu</button><button id="choose-mode" class="text-button">Vybrat jiný režim</button></section>
+<footer>Pro Kristi, s chutí objevovat. <span aria-hidden="true">✧</span></footer>
+</main></body></html>
